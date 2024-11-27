@@ -8,7 +8,7 @@ connectDB();
 
 app.use(express.json());
 app.get("/", (req, res) => {
-    res.send("Hello, Vercel!");
+    res.send("Hello!");
   });
 app.use('/api', bookRoutes);
 
