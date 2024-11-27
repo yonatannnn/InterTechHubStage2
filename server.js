@@ -7,6 +7,9 @@ const app = express();
 connectDB();
 
 app.use(express.json());
+app.get("/", (req, res) => {
+    res.send("Hello, Vercel!");
+  });
 app.use('/api', bookRoutes);
 
 const PORT = process.env.PORT || 5000;
